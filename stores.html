@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		.cart{
+			position: fixed;
+			right: 20px;
+			top: 20px;
+			color: white;
+			z-index: 1000;
+		}
+		.menu{
+			z-index: 1000;
+			width: 200px;
+			height: 200px;
+			position: fixed;
+			color: black;
+			display: flex;
+			flex-flow: column;
+		}
+		.menu-title{
+			padding: 10px;
+			font-size: 50px;
+		}
+		.menu-item{	
+			padding: 10px;
+			height: 40px;
+		}
+		.menu-item>a{
+			margin-left: 20px;
+			color: black;
+			text-decoration: none;
+			font-size: 25px;
+		}
+		.menu-item>a:hover{
+			text-decoration: none;
+			border-bottom: 5px black 0.5s;
+			font-size: 35px;
+			transition: all ease-in-out 0.2s;
+		}
+		.main
+		{
+			width: 100%;
+		}
+		.menu-letf
+		{
+			width: 20%;
+			position: fixed;
+		}
+		.content
+		{
+			display: flex;
+			flex-flow: row;
+			width: 100%;
+		}
+		.content-img{
+			padding-left: 15%;
+			width: 70%;
+		}
+		.content-img_title
+		{
+			text-align: center;
+			font-size: 35px;
+			padding: 25px;
+		}
+		.content-img_display
+		{
+			height: 1200px;
+			background-image: url('images/stores.jpg');
+			background-size: cover;
+		}
+		.content-note
+		{
+			padding: 20px 20px;
+			margin-top: 90px;
+			width: 30%;
+			font-family: 'tahoma';
+		}		
+		.footer{
+			background-color: black;
+			height: 330px;
+			color:white;
+			display: flex;
+			flex-flow: row;
+		}
+		.footer-left{
+			padding-top: 50px;
+			width: 50%;
+		}
+		.footer-right{
+			padding-top: 50px;
+			width: 50%;
+		}
+		.footer-left1{
+			padding-left: 350px;
+			padding-top: 15px;
+		}
+		.footer-right2
+		{
+			text-align: right;
+			padding-top: 10px;
+			padding-right: 300px;
+			color: rgb(208, 191, 191);
+		}
+		.img 
+		{
+			width: 25px;
+			height: 25px;
+		}
+		.footer-right__icon
+		{
+			display: flex;
+			flex-wrap: nowrap;
+			padding-left: 308px;
+			padding-top: 5px;
+			
+		}
+		.footer-right__icon__img
+		{
+			margin: 15px;
+		}
+		.img{
+			width: 30px;
+			height: 30px;
+		}
+		
+	</style>
+</head>
+<body style="padding: 0px;margin: 0px;">
+	<div>
+		<div class="menu-letf">
+			<div class="menu">
+				<div class="menu-title">MIKENCO</div>
+				<div class="menu-item">
+					<a href="#">HOME</a>
+				</div>
+				<div class="menu-item">
+					<a href="#">PRODUCTS</a>
+				</div>
+				<div class="menu-item">
+					<a href="#">WARRANTY</a>
+				</div>
+				<div class="menu-item">
+					<a href="#">MEMBER</a>
+				</div>
+				<div class="menu-item">
+					<a href="#">STORES</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="cart">
+			<img src="images/cart.png" width="40px">
+		</div>
+	</div>
+	<div class="content">
+		<div class="content-img">
+			<div class="content-img_title">
+				STORES
+			</div>
+			<div class="content-img_display"></div>
+		</div>
+		<div class="content-note">
+			<strong>HÀ NỘI</strong>
+			<p>224 Thái Hà, Đống Đa - 024 7101 9191 nhánh 1</p>
+			<p>208 Phố Huế, Hai Bà Trưng - 024 7101 9191 nhánh 2</p>
+			<p>121 Cầu giấy, Cầu Giấy - 024 7101 9191</p>
+			<strong>TP HỒ CHÍ MINH</strong>
+			<p>97B Nguyễn Trãi, Quận 1 - 024 7101 9191 nhánh 4</p>
+			<strong>ĐÀ NẴNG</strong>
+			<p>402 Lê Duẩn, Thanh Khê - 024 7101 9191 nhánh 3</p>
+			<strong>LẠNG SƠN</strong>
+			<p>130 Trần Đăng Ninh - 0205 870 456</p>
+			<strong>HẢI PHÒNG</strong>
+			<p>132 Lê Lợi - 0899 153 966</p>
+			<p>143 Thuỷ Sơn, Thuỷ Nguyên - 0946 999 888</p>
+			<strong>VINH</strong>
+			<p>276 Nguyễn Văn Cừ - 0966 523 465</p>
+			<strong>CẦN THƠ</strong>
+			<p>45 Lý Tự Trọng, Ninh Kiều - 07777 11 999</p>
+			<strong>BẮC GIANG</strong>
+			<p>212 Hoàng Văn Thụ - 08555 66186</p>
+			<strong>BÌNH DƯƠNG</strong>
+			<p>173 Yersin - 091 422 5250</p>
+		</div>
+	</div>
+	<br><br><br>
+	<div class = "footer">
+		<div class = "footer-left">
+			<div class='footer-left1'>GENERAL POLICY</div>
+			<div class="footer-left1">PRIVACY POLICY</div>
+			<div class='footer-left1'> 
+				<img src="images/trans_bo-cong-thuong.png">
+			</div>
+		</div>
+		<div class = "footer-right">
+			<div class="footer-right2">MIKENCO VIETNAM TRADING COMPANY LIMITED</div>
+			<div class="footer-right2">DKKD 0107439368 by KHDT SaiGon dated 12/12/2021</div>
+			<div class="footer-right2">Representative: PHAN DANG LINH</div>
+			<div>&nbsp;</div>
+			<div class="footer-right2">Store: 860 CaoLo, Phuong 5, Quan 8, HoChiMinh</div>
+			<div class="footer-right2">Hotline: 0865674378</div>
+			<div class="footer-right2">Email: DH51902612@student.stu.edu.vn</div>
+			<div class="footer-right__icon">
+				<div class="footer-right__icon__img"><img src="images/IconLazada.png"class="img"> </div>
+				<div class="footer-right__icon__img"><img src="images/iconShopee.png"class="img"> </div>
+				<div class="footer-right__icon__img"><img src="images/iconTiki.png"class="img"></div>
+				<div class="footer-right__icon__img"><img src="images/iconTikTok.png"class="img"></div>
+				<div class="footer-right__icon__img"><img src="images/iconYoutube.png"class="img"></div>
+				<div class="footer-right__icon__img"><img src="images/iconFb.png"class="img"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
