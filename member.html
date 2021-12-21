@@ -28,8 +28,7 @@
 			font-size: 50px;
 		}
 		.menu-item{	
-			padding: 10px;
-			height: 40px;
+			padding: 10px 0px 10px 10px;
 		}
 		.menu-item>a{
 			margin-left: 20px;
@@ -39,9 +38,37 @@
 		}
 		.menu-item>a:hover{
 			text-decoration: none;
-			border-bottom: 5px black 0.5s;
+			border-bottom: 5px white 0.5s;
 			font-size: 35px;
 			transition: all ease-in-out 0.2s;
+		}
+		.menu-item_product{
+			padding: 10px 0px 10px 10px;
+			margin-left: 20px;
+			color: black;
+			text-decoration: none;
+			font-size: 25px;
+		}
+		.menu-item_product>.submenu-title_product:hover{
+			text-decoration: none;
+			border-bottom: 5px white 0.5s;
+			font-size: 35px;
+			transition: all ease-in-out 0.2s;
+		}
+		.submenu-item_product>a{	
+			display: none;
+			padding: 10px 0px 10px 40px;
+			color: black;
+			text-decoration: none;
+		}
+		.submenu-item_product>a:hover{
+			text-decoration: none;
+			border-bottom: 5px white 0.5s;
+			font-size: 35px;
+			transition: all ease-in-out 0.2s;
+		}
+		.menu-item_product:hover > .submenu-item_product>a{
+			display: block;
 		}
 		.main
 		{
@@ -137,8 +164,13 @@
 				<div class="menu-item">
 					<a href="index.html">HOME</a>
 				</div>
-				<div class="menu-item">
-					<a href="allcollection.html">PRODUCTS</a>
+				<div class="menu-item_product">
+					<div class="submenu-title_product">PRODUCTS</div>
+					<div class="submenu-item_product"><a href="jacket.html">JACKETS</a> </div>
+					<div class="submenu-item_product"><a href="shorts.html">SHORTS</a> </div>
+					<div class="submenu-item_product"><a href="shoes.html">SHOES</a> </div>
+					<div class="submenu-item_product"><a href="pants.html">PANTS</a> </div>
+					<div class="submenu-item_product"><a href="sweater.html">SWEATER</a> </div>
 				</div>
 				<div class="menu-item">
 					<a href="warranty.html">WARRANTY</a>
