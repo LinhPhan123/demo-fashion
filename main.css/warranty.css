@@ -251,3 +251,24 @@
     width: 30px;
     height: 30px;
 }
+.backtotop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    border-radius: 18px;
+    font-size: 18px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.backtotop:hover {
+    background-color: blueviolet;
+}
+html {
+    scroll-behavior: smooth;
+}

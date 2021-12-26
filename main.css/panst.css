@@ -324,3 +324,52 @@ div.product div .product-info .product-price
     width: 30px;
     height: 30px;
 }
+.backtotop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    border-radius: 18px;
+    font-size: 18px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.backtotop:hover {
+    background-color: blueviolet;
+}
+html {
+    scroll-behavior: smooth;
+}
+.input {
+    background-image: url('../images/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+}
+.pagination {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: gray;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
