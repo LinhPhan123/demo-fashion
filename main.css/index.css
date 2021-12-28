@@ -160,8 +160,8 @@
 }
 .cart {
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 1%;
+    top: 2%;
     color: white;
     z-index: 1000;
 }
@@ -223,41 +223,41 @@
 }
 .footer {
     background-color: black;
-    height: 330px;
+    height: 100%;
     color: white;
     display: flex;
     flex-flow: row;
     font-family: 'tahoma';
 }
 .footer-left {
-    padding-top: 50px;
+    padding-top: 3%;
     width: 50%;
 }
 .footer-right {
-    padding-top: 50px;
+    padding-top: 3%;
     width: 50%;
-    padding-right: 250px;
+    padding-right: 12%;
 }
 .footer-left1 {
-    padding-left: 350px;
-    padding-top: 15px;
+    padding-left: 45%;
+    padding-top: 2%;
 }
 .footer-right2 {
-    padding-top: 10px;
+    padding-top: 2%;
     color: rgb(208, 191, 191);
     text-align: right;
-    padding-right: 50px;
+    padding-right: 6%;
 }
 
 .footer-right__icon {
     display: flex;
     flex-flow: row;
-    padding-top: 5px;
+    padding-top: 10px;
     justify-content: flex-end;
-    padding-right: 35px;
+    padding-right: 4%;
 }
 .footer-right__icon__img {
-    margin: 15px;
+    margin: 2%;
 }
 .img {
     width: 30px;
@@ -266,8 +266,8 @@
 .backtotop {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 2%;
+    right: 1%;
     border: none;
     outline: none;
     background-color: #555;
@@ -283,4 +283,62 @@
 }
 html {
     scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .top {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .top_img {
+        width: 100vw;
+    }
+    .mid {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .bot {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .mid_img {
+        width: 100vw;
+    }
+    .bot {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .bot_img {
+        width: 100vw;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer-left {
+        width: 100vw;
+    }
+    .footer-left1 {
+        width: 100vh;
+        padding: 0px;
+        text-align: center;
+        margin: 10px;
+        padding-left: 35px;
+    }
+    .footer-right {
+        padding: 0px;
+        width: 100vw;
+        top: 20%;
+    }
+    .footer-right2 {
+        text-align: center;
+        padding-left: 60px;
+    }
+    .footer-right__icon {
+        justify-content: center;
+        padding-left: 43px;
+    }
+    .top-button {
+        height: 100px;
+        top: 65vh;
+    }
 }
