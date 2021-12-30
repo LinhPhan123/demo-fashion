@@ -40,3 +40,23 @@ function myFunction() {
         }
     }
 }
+
+function showMenu() {
+    let menuItem = document.getElementsByClassName('menu-item');
+    let menuItemProduct = document.getElementsByClassName('menu-item_product');
+    for (let i = 0; i < menuItem.length; i++) {
+        if (menuItemProduct[i]) {
+            menuItemProduct[i].style.display = menuItemProduct[i].style.display != 'block' ? 'block' : 'none';
+        }
+        menuItem[i].style.display = menuItem[i].style.display != 'block' ? 'block' : 'none';
+    }
+}
+
+function closeMenu() {
+    let submenuItemProduct = document.getElementsByClassName('submenu-item_product')
+    for (let i = 0; i < submenuItemProduct.length; i++) {
+        if (submenuItemProduct[i]) {
+            submenuItemProduct[i].style.display = submenuItemProduct[i].style.display != 'block' ? 'block' : 'none';
+        }
+    }
+}
