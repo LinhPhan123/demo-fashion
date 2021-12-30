@@ -409,8 +409,8 @@ html {
     }
     .menu-item > a:hover {
         text-decoration: none;
-        border-bottom: 5px white;
-        font-size: 35px;
+        border-bottom: 0px white;
+        font-size: 20px;
         transition: all ease-in-out 0s;
     }
     .menu-item-home {
